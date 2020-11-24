@@ -1,0 +1,34 @@
+h2{
+background-color: green;
+text-align: center;
+}
+#gayathri{
+color: red;
+}
+.gayathri{
+color: blue;
+}
+*{
+text-align: center;
+}
+p,h5,h4,table{
+background-color: aqua;
+}
+/*css comments*/
+.parent{
+background-color: bisque;
+margin: 5%;
+display: flex;
+/*flex-direction:row;*/
+justify-content:space-around; 
+}
+.child{
+background-color: aqua;
+margin:4%;
+padding: 2%;
+}
+
+.or{
+	display: flex;
+	flex-direction: row;
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	 <meta name="description" content="Profile Crad">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon"  href="g.png">
+	<title>Profile Cards</title>
+	<style type="text/css">
+		.profile{
+			display: flex;
+			width: 100%;
+			border: 2px solid blue;
+			padding: 1%;
+			margin: 1%;
+		}
+		.profile>div{
+			padding: 1%;
+			margin: 1%;
+			width: 30%;
+			border:2px solid maroon;
+			text-align: center;
+			box-shadow:10px 10px 10px 10px;
+
+
+		}
+		img{
+			border-radius: 20%;
+			border:2px solid maroon;
+		}
+		button{
+			box-shadow: 2px 2px 2px 2px;
+			color: maroon;
+			width: 25%;
+		}
+		a{
+			text-decoration: none;
+		}
+.copy{
+	text-align: center;
+	color: blue;
+	background-color:maroon;
+	width: 100%;
+	padding: 1%;
+	margin: 1%;
+}
+.header{
+	display: flex;
+	width: 100%;
+	margin: 1%;
+	padding: 1%;
+}
+.header>div{
+	width: 50%;
+	padding: 1%;
+	margin: 1%;
+
+}
+
+		@media only screen and (min-width:320px) and (max-width: 480px){
+			.profile,.header{
+				display: flex;
+				flex-direction: column;
+				max-width: 100%;
+			}
+			.profile>div,.header>div{
+				width: 90%;
+				text-align: center;
+
+			}
+			.copy{
+				max-width: 100%;
+			}
+			}
+
+/* Tab View*/
+@media only screen and (min-width:481px) and (max-width: 768px){
+	body{
+		color: blue;
+	}
+			.profile{
+
+				display: flex;
+				flex-direction: row-reverse;
+				max-width: 100%;
+				/*flex-wrap: wrap;*/
+			}
+			.profile>div{
+				width: 90%;
+
+			}
+			.copy{
+				max-width: 100%;
+			}
+			}
+
+@media only screen and (min-width:769px) and (max-width: 1024px){
+	body{
+		color: blue;
+	}
+			.profile{
+
+				display: flex;
+				flex-direction: row;
+				max-width: 100%;
+				/*flex-wrap: wrap;*/
+			}
+			.profile>div{
+				width: 90%;
+				background-color: yellow;
+
+			}
+			.copy{
+				max-width: 100%;
+			}
+			}
+
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="left">
+			<img src="g.png" width="200px" height="200px" alt="profile">
+		</div>
+		<div class="right">
+			<h1 style="color: blue">ReactJS</h1>
+			<h1 style="color: blue">Online Traning</h1>
+			<h1 style="color: blue">APSSDC</h1>
+		</div>
+	</div>
+<h1 style="text-align: center; color: maroon">My Works</h1>
+<div class="profile">
+	<div class="card">
+		<img src="g.png" width="200px" height="200px" alt="profilecard">
+		<h1 style="color:maroon">Gaytri Devi</h1>
+		<hr>
+		<h4>Tanuku</h4>
+		<button><a href="#">View</a></button>
+	</div>
+	<div class="card">
+		<img src="g.png" width="200px" height="200px" alt="profilecard">
+		<h1 style="color: blue">Kalyan P</h1>
+		<hr>
+		<h4>Guntur</h4>
+		<button><a href="#">View</a></button>
+	</div>
+	<div class="card">
+		<img src="g.png" width="200px" height="200px" alt="profilecard">
+		<h1 style="color:teal">Swami K</h1>
+		<hr>
+		<h4>Visakhapatnam</h4>
+		<button><a href="#">View</a></button>
+	</div>
+</div>
+<!-- Footer -->
+<div class="copy">
+	<h1 style="color:#ffff"> All Copy Rights Reviced By APSSDC REACTJS Team@2020</h1>
+</div>
+</body>
+</html>
