@@ -35,37 +35,28 @@
 		a{
 			text-decoration: none;
 		}
-
-.header{
-	display: flex;
+.copy{
+	text-align: center;
+	color: blue;
+	background-color:maroon;
 	width: 100%;
-	margin: 1%;
 	padding: 1%;
+	margin: 1%;
 }
-.header>div{
-	width: 50%;
-	padding: 1%;
-	margin: 1%;
 
-}
-.boxed{
-	border:1px solid green;
-}
+
 		@media only screen and (min-width:320px) and (max-width: 480px){
-			.profile,.header{
+			.profile{
 				display: flex;
 				flex-direction: column;
 				max-width: 100%;
 			}
-			.profile>div,.header>div{
+			.profile>div{
 				width: 90%;
 				text-align: center;
 
 			}
-			.copy{
-				max-width: 100%;
-			}
-			}
+		
 
 /* Tab View*/
 @media only screen and (min-width:481px) and (max-width: 768px){
@@ -83,10 +74,7 @@
 				width: 90%;
 
 			}
-			.copy{
-				max-width: 100%;
-			}
-			}
+
 
 @media only screen and (min-width:769px) and (max-width: 1024px){
 	body{
@@ -105,54 +93,35 @@
 
 			}
 
+
 	</style>
 </head>
 <body>
 <div class="profile">
 	<div class="card">
-		<img src="img/g.png" width="300px" height="500px" alt="profilecard">
-		<div class="boxed">
-			<h2><bold>Name:</bold>sindhura</h2>
-	</div>
-	<div class="boxed">
-		<h2><bold>Email id:</bold>Csindhura1279@gmail.com</h2>
-	</div>
-	<div class="boxed">
-		<h2><bold>Address:</bold>19-4-251,Vinayak nagar,Anantapur,515001.</h2>
-	</div>
+		<img src="img/g.png" width="200px" height="200px" alt="profilecard">
+
+
+
+
+
+		<h1 style="color:maroon">M.Harika</h1>
+		<hr>
+		<h4>B.Tech ECE</h4>
+		<button><a href="card1.html">View</a></button>
 	</div>
 	<div class="card">
-		<div class="boxed">Career objective</div>
-		
-			<p>To Be a part of Organization that provides an Atmosphere of mutual growth and Benefits ,where I can show My Talent and Potential</p>
-			<div class="boxed">Educational Details</div>
-				<div>
-				<h4>1.SSC-2014</h4>
-				<h4>Lakshmi english medium high school</h4>
-				<h4>Board of secondary education</h4>
-				<h4>87%</h4>
-			</div>
-			<div>
-				<h4>2.Intermediate-2016</h4>
-				<h4>Narayana junior college</h4>
-				<h4>Board of intermediate Education</h4>
-				<h4>90%</h4>
-			</div>
-			<div>
-				<h4>3.B.Tech-2020</h4>
-				<h4>Y.S.R Engineering college of YVU</h4>
-				<h4>Yogi Vemana University</h4>
-				<h4>68%</h4>
-			</div>
-		<div class="boxed">Technical skills</div>
-		<h4>c</h4>
-		<h4>java</h4>
-		<h4>html</h4>
-		<h4>Android</h4>
-	<div class="boxed">Achievements</div>
-	<h4>33% year over year improvements in department productivity</h4>
-	<h4>record high department quality benchmark</h4>
+		<img src="img/g.png" width="200px" height="200px" alt="profilecard">
+		<h1 style="color: blue">C.Sindhura</h1>
+		<hr>
+		<h4>B.Tech CSE</h4>
+		<button><a href="card2.html">View</a></button>
+	</div>
+	<div class="card">
+		<img src="img/g.png" width="200px" height="200px" alt="profilecard">
+		<h1 style="color:teal">Jyothi</h1>
+		<hr>
+		<h4>Degree B.SC</h4>
+		<button><a href="#">View</a></button>
+	</div>
 </div>
-</div>
-</body>
-</html>
