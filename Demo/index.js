@@ -4,13 +4,12 @@ function loadJSON(file,callback){
   
      var xhrObject= new XMLHttpRequest();
      xhrObject.overrideMimeType('application/json')
-     xhrObject.open('GET',file,true);
+     xhrObject.open("GET",file,true);
 
      xhrObject.onreadystatechange=function()
      {
-        if(xhrObject.readyState ===  4 && xhrObject.status=="200")
-        {
-                 callback(xhrObject.responseText);
+        if(xhrObject.readyState ===  4 && xhrObject.status=="200"){
+            callback(xhrObject.responseText);
      	}
      }
      xhrObject.send();
@@ -22,6 +21,7 @@ loadJSON("data.json",function(text){
     console.log(data);
     profile(data);
     skills(data.skills);
+    education(data.education);
 })
 
 function profile(pdata){
@@ -31,13 +31,13 @@ function profile(pdata){
     var card=document.createElement("div");
     card.classList.add("card");
     
-    var pic=document.createElement('img');
-    pic.src="admin.png";
-    pic.width="200px";
+    var pic=document.createElement("img");
+    pic.src= "img/g.png";
+    pic.width="200";
     card.appendChild(pic);
     var name=document.createElement('h2');
-    ename.textContent=pdata.name;
-    card.appendChild(ename);
+    name.textContent=pdata.name;
+    card.appendChild(name);
     var phone=document.createElement('h3');
     phone.textContent=pdata.phone;
     card.appendChild(phone);
@@ -73,6 +73,28 @@ function skills(eskills){
     }
 }
 
+
+
+function education(education){
+    console.log(education)
+
+var ed=document.createElement("h2");
+    ed.innerHTML="Educational details:";
+    right.appendChild(ed);
+    var ehr=document.createElement("hr");
+  right.appendChild(ehr);
+   var etable=document.createElement("table");
+   etable.border="1";
+   var tr1="<tr><td>sno</td>><td>institute</td><td>percentage</td></tr>";
+var tr2="";
+for(i=0;i<education.length;i++){
+  tr2=tr2+"<tr><td>"+education[i].sno+"</td><td>"+education[i].institute+"</td><td>"+education[i].percentage+"</td></tr>";
+
+}
+etable.innerHTML=tr1+tr2;
+right.appendChild(etable);
+
+}
 
 
 }())

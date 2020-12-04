@@ -22,15 +22,15 @@ function loadJSON(file,callback){
 
 }
 
-loadJSON("data1.json",function(text)
+loadJSON("info.json",function(text)
 {
-    var data1=JSON.parse(text);
-    console.log(data1);
-    profile(data1);
-    skills(data1.skills);
+    var info=JSON.parse(text);
+    console.log(info);
+    profile(info);
+    skills(info.skills);
 })
-function profile(pdata){
-    console.log(pdata);
+function profile(pinfo){
+    console.log(pinfo);
     var main=document.getElementById("main");
     var left=document.getElementById("left");
     var card=document.createElement("div");
@@ -41,13 +41,13 @@ function profile(pdata){
     pic.width="200px";
     card.appendChild(pic);
     var name=document.createElement('h2');
-    ename.textContent=pdata.name;
+    ename.textContent=pinfo.name;
     card.appendChild(ename);
     var phone=document.createElement('h3');
-    phone.textContent=pdata.phone;
+    phone.textContent=pinfo.phone;
     card.appendChild(phone);
     var email=document.createElement('h4');
-    email.textContent=pdata.email;
+    email.textContent=pinfo.email;
     card.appendChild(email);
     left.appendChild(card);
     main.appendChild(left);

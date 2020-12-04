@@ -1,0 +1,14 @@
+{
+	"name":"Sindhura",
+	"email":"csindhura1279gmail.com",
+	"phone":9865741230,
+	"skills":[
+		{"course":"Programming Languages",
+		  "keywords":["C","Java","Python"]
+        },{
+        	"course":"Web Technologies",
+        	"keywords":["Html","Css3","JavaScript"]
+
+	}]
+
+}

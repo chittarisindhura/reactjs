@@ -1,6 +1,6 @@
 {
-	"name":"Koushik",
-	"email":"kushik.t@gmail.com",
+	"name":"c.sindhura",
+	"email":"csindhura1279@gmail.com",
 	"phone":9865741230,
 	"skills":[
 		{"course":"Programming Languages",
@@ -9,4 +9,11 @@
         	"course":"Web Technologies",
         	"keywords":["Html","Css3","JavaScript"]
 
-	}]
+	}],
+
+	"education":[
+		{"sno":1,"institute":"Y.S.R Engineering college of YVU","percentage":70},
+		{"sno":2, "institute":"Narayana junior college", "percentage":90},
+		{"sno":3, "institute":"Lakshmi school", "percentage":87}
+	]
+}
